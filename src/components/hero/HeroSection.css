@@ -1,0 +1,90 @@
+/* HeroSection.css */
+
+/* Common styles for all screen sizes */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Set a fixed height for the carousel container */
+}
+
+.slick-slider {
+  width: 100%;
+  height: 100%; /* Ensure the slider takes up the full height of the container */
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire slide */
+}
+
+.slick-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust the alpha (last value) for transparency */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+.catchy-headline {
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+
+.catchy-headline span {
+  color: #ffd700; /* Customize the color as needed */
+}
+
+.subheadline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-book-now {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff; /* Customize the color as needed */
+  border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .slick-slider {
+    height: auto; /* Allow slider to adjust height based on content */
+  }
+
+  .hero-content {
+    width: 90%; /* Adjust width for better readability on small screens */
+  }
+
+  .catchy-headline {
+    font-size: 1.8rem; /* Adjust font size for better readability on small screens */
+  }
+
+  .subheadline {
+    font-size: 1rem; /* Adjust font size for better readability on small screens */
+  }
+}

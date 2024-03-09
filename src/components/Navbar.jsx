@@ -3,6 +3,7 @@ import Logo from '../assets/logo.svg';
 import Hamburger from '../assets/hamburgerMenu.svg';
 import Close from '../assets/close.svg';
 import { motion } from 'framer-motion';
+import { IoIosHome,IoIosContact,IoIosPricetag,IoIosInformationCircleOutline,IoMdCafe } from 'react-icons/io';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,12 +26,50 @@ const Navbar = () => {
         <h1 className='text-3xl font-bold text-sky-400/100'>WestNile</h1>
         <div className='flex items-center'>
           <ul className='hidden md:flex gap-9 '>
-            <li>Home</li>
-            <li>About</li>
-            <li>Rooms & Suites</li>
-            <li>Contact-Us</li>
-            <li>Pricing</li>
+
+        <div className="flex items-center hover:text-blue-800">
+            <IoIosHome className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li>Home</li>   
+            </div>
+        </div>
+
+
+
+        <div className="flex items-center hover:text-blue-800">
+            <IoIosInformationCircleOutline className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li>About</li>   
+            </div>
+        </div>
+
+        <div className="flex items-center hover:text-blue-800">
+            <IoMdCafe className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li>Rooms and Suites</li>   
+            </div>
+        </div>
+
+
+        <div className="flex items-center hover:text-blue-800">
+            <IoIosContact className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li>Contact Us</li>   
+            </div>
+        </div>
+
+        <div className="flex items-center hover:text-blue-800">
+            <IoIosPricetag class="text-2xl mr-1" /> 
+            <div className="flex flex-col">
+                <li>Pricing</li>   
+            </div>
+        </div>
+
           </ul>
+
+
+                {/* MOBILE VIEW */}
+
         </div>
         <div className='md:flex hidden'></div>
         <motion.div
@@ -49,11 +88,47 @@ const Navbar = () => {
           exit={{ opacity: 0, x: 200 }}
           className={toggle ? 'absolute z-50 p-4 bg-white w-full px-8 md:hidden' : 'hidden'}
         >
-          <li className='p-4 hover:bg-gray-50'>Home</li>
-          <li className='p-4 hover:bg-gray-50'>About</li>
-          <li className='p-4 hover:bg-gray-50'>Rooms & Suites</li>
-          <li className='p-4 hover:bg-gray-50'>Contact-Us</li>
-          <li className='p-4 hover:bg-gray-50'>Pricing</li>
+  
+        <div className="flex items-center mb-4 hover:text-blue-800">
+            <IoIosHome className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li className='text-lg'>Home</li>   
+            </div>
+        </div>
+
+
+
+        <div className="flex items-center mb-4 hover:text-blue-800">
+            <IoIosInformationCircleOutline className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li className='text-lg'>About</li>   
+            </div>
+        </div>
+
+        <div className="flex items-center mb-4 hover:text-blue-800">
+            <IoMdCafe className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li className='text-lg'>Rooms and Suites</li>   
+            </div>
+        </div>
+
+
+        <div className="flex items-center mb-4 hover:text-blue-800">
+            <IoIosContact className="text-2xl mr-1" /> 
+            <div class="flex flex-col">
+                <li className='text-lg'>Contact Us</li>   
+            </div>
+        </div>
+
+        <div className="flex items-center mb-4 hover:text-blue-800">
+            <IoIosPricetag class="text-2xl mr-1" /> 
+            <div className="flex flex-col">
+                <li className='text-lg'>Pricing</li>   
+            </div>
+        </div>        
+        
+
+
           <div className='flex flex-col my-4 gap-4'></div>
         </motion.ul>
       </div>

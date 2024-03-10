@@ -29,7 +29,7 @@ const AboutUsSection = () => {
           {/* Image */}
           <div className="md:order-first" id="overlay">
             <img
-              src="src/assets/about.jpg" // Replace with your actual image URL
+              src="./src/assets/about.jpg" // Replace with your actual image URL
               alt="Resort Image"
               className="w-full h-auto rounded-md shadow-md"
               id="background"

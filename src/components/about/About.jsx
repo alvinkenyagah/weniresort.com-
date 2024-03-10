@@ -1,8 +1,11 @@
 // AboutUsSection.js
 import React from 'react';
 import './About.css'
+import {t1} from './index'
 
 const AboutUsSection = () => {
+
+
   return (
     <section className="py-16 bg-white" id="about">
       <div className="container mx-auto">
@@ -27,12 +30,11 @@ const AboutUsSection = () => {
           </div>
 
           {/* Image */}
-          <div className="md:order-first" id="overlay">
+          <div className="md:order-first">
             <img
-              src="./src/assets/about.jpg" // Replace with your actual image URL
+              src={t1} // Replace with your actual image URL
               alt="Westnile resort"
               className="w-full h-auto rounded-md shadow-md"
-              id="background"
             />
           </div>
         </div>

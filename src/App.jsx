@@ -1,12 +1,12 @@
 import React from 'react'
-import {Navbar,Footer } from './components'
+import Navbar from './components/Navbar'
 import Landing from './Landing'
-import MainHeroSection from './components/hero/MainHeroSection'
+
 function App() {
 
   return (
     <div className="app">
-        <Navbar/>
+      <Navbar/>
         <Landing/>
     </div>
   )

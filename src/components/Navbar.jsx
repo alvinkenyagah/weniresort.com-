@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo.svg';
 import Hamburger from '../assets/hamburgerMenu.svg';
 import Close from '../assets/close.svg';
 import { motion } from 'framer-motion';

@@ -26,43 +26,43 @@ const Navbar = () => {
         <div className='flex items-center'>
           <ul className='hidden md:flex gap-9 '>
 
-        <div className="flex items-center hover:text-blue-800">
+        <a className="flex items-center hover:text-blue-800" href="#hero" style={{cursor:"pointer"}}>
             <IoIosHome className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li>Home</li>   
             </div>
-        </div>
+        </a>
 
 
 
-        <div className="flex items-center hover:text-blue-800">
+        <a className="flex items-center hover:text-blue-800" href="#about" style={{cursor:"pointer"}}>
             <IoIosInformationCircleOutline className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li>About</li>   
             </div>
-        </div>
+        </a>
 
-        <div className="flex items-center hover:text-blue-800">
+        <a className="flex items-center hover:text-blue-800" href="#pricing" style={{cursor:"pointer"}}>
             <IoMdCafe className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li>Rooms and Suites</li>   
             </div>
-        </div>
+        </a>
 
 
-        <div className="flex items-center hover:text-blue-800">
+        <a className="flex items-center hover:text-blue-800" href="#contactus" style={{cursor:"pointer"}}>
             <IoIosContact className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li>Contact Us</li>   
             </div>
-        </div>
+        </a>
 
-        <div className="flex items-center hover:text-blue-800">
+        <a className="flex items-center hover:text-blue-800" href="#pricing" style={{cursor:"pointer"}}>
             <IoIosPricetag class="text-2xl mr-1" /> 
             <div className="flex flex-col">
                 <li>Pricing</li>   
             </div>
-        </div>
+        </a>
 
           </ul>
 
@@ -88,43 +88,43 @@ const Navbar = () => {
           className={toggle ? 'absolute z-50 p-4 bg-white w-full px-8 md:hidden' : 'hidden'}
         >
   
-        <div className="flex items-center mb-4 hover:text-blue-800">
+        <a className="flex items-center mb-4 hover:text-blue-800" href="#hero" style={{cursor:"pointer"}}>
             <IoIosHome className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li className='text-lg'>Home</li>   
             </div>
-        </div>
+        </a>
 
 
 
-        <div className="flex items-center mb-4 hover:text-blue-800">
+        <a className="flex items-center mb-4 hover:text-blue-800" href="#about" style={{cursor:"pointer"}}>
             <IoIosInformationCircleOutline className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li className='text-lg'>About</li>   
             </div>
-        </div>
+        </a>
 
-        <div className="flex items-center mb-4 hover:text-blue-800">
+        <a className="flex items-center mb-4 hover:text-blue-800" href="#hero"style={{cursor:"pointer"}}>
             <IoMdCafe className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li className='text-lg'>Rooms and Suites</li>   
             </div>
-        </div>
+        </a>
 
 
-        <div className="flex items-center mb-4 hover:text-blue-800">
+        <a className="flex items-center mb-4 hover:text-blue-800" href="#contactus" style={{cursor:"pointer"}}>
             <IoIosContact className="text-2xl mr-1" /> 
             <div class="flex flex-col">
                 <li className='text-lg'>Contact Us</li>   
             </div>
-        </div>
+        </a>
 
-        <div className="flex items-center mb-4 hover:text-blue-800">
+        <a className="flex items-center mb-4 hover:text-blue-800" href="#pricing" style={{cursor:"pointer"}}>
             <IoIosPricetag class="text-2xl mr-1" /> 
             <div className="flex flex-col">
                 <li className='text-lg'>Pricing</li>   
             </div>
-        </div>        
+        </a>        
         
 
 

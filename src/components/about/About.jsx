@@ -1,9 +1,10 @@
 // AboutUsSection.js
 import React from 'react';
+import './About.css'
 
 const AboutUsSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="about">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
@@ -26,11 +27,12 @@ const AboutUsSection = () => {
           </div>
 
           {/* Image */}
-          <div className="md:order-first">
+          <div className="md:order-first" id="overlay">
             <img
-              src="https://weetracker.com/wp-content/uploads/2019/10/sirikoi-lodge-cottage-from-outside.jpg" // Replace with your actual image URL
+              src="src/assets/about.jpg" // Replace with your actual image URL
               alt="Resort Image"
               className="w-full h-auto rounded-md shadow-md"
+              id="background"
             />
           </div>
         </div>

@@ -28,7 +28,7 @@ const MainHeroSection = () => {
   return (
     <>
 
-    <div className="hero-section">
+    <div className="hero-section" id="hero">
       <Slider {...carouselSettings}>
         {carouselImages.map((image, index) => (
           <div key={index}>
@@ -43,7 +43,7 @@ const MainHeroSection = () => {
         <p className="subheadline">
           Experience luxury and comfort like never before. Visit us today.
         </p>
-        <a href="#explore" className="btn-book-now">
+        <a href="#about" className="btn-book-now">
           Explore
         </a>
       </div>

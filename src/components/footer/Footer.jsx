@@ -13,7 +13,7 @@ const Footer = () => {
           <h2 className="text-black text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="list-none p-0 m-0">
             <li className="mb-2">
-              <a href="#home" className="text-xl text-black hover:text-blue-800 ">
+              <a href="#hero" className="text-xl text-black hover:text-blue-800 ">
                 Home
               </a>
             </li>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
+        <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
           <h2 className="text-black text-2xl font-bold mb-4">Contact Us</h2>
           <p className='text-xl'>Email: info@westnile.com</p>
           <p className='text-xl'>Phone: +1 123-456-7890</p>

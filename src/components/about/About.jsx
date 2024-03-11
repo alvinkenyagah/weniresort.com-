@@ -7,7 +7,7 @@ const AboutUsSection = () => {
 
 
   return (
-    <section className="py-16 bg-white" id="about">
+    <section className="py-5 bg-white" id="about">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}

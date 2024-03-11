@@ -14,29 +14,27 @@ const AboutUsSection = () => {
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">About Our Resort</h2>
             <p className="text-gray-600 mb-6">
-              Welcome to our luxurious resort where comfort meets elegance. Nestled in the heart of
-              breathtaking scenery, our resort offers a perfect blend of relaxation and adventure.
+            Welcome to WestNile Resort, where tradition meets modern comfort. Located in Kisumu City, Nyamasaria 200meters from butter toast bakery off Nairobi road towards Nyamasaria SDA church. 
             </p>
             <p className="text-gray-600 mb-6">
-              Whether you're here for a family vacation, a romantic getaway, or a business retreat,
-              our resort caters to every need. Our world-class amenities, impeccable service, and
-              stunning surroundings create an unforgettable experience for our guests.
+            WestNile offers a fully functional conference facility with a capacity of 200 people and an outdoor garden that can carry up to 300 people. 
+A garden bar and recreational garden. We have an accommodation capacity of 40 executive rooms that are self-contained and fully functional.
             </p>
             <p className="text-gray-600">
-              At our resort, we strive to provide a haven of tranquility where you can escape the
-              ordinary and indulge in luxury. Book your stay with us and create beautiful memories
-              that last a lifetime.
+            At WestNile Resort, you are guaranteed 24/7 wifi. For football lovers, our garden sports bar boasts a 65" TV with a fully installed DSTV for all matches. 
+Our conference has fully installed facilities, i.e., projectors, a public address system, and neatly spread seats and tables.
             </p>
           </div>
 
           {/* Image */}
-          <div className="md:order-first">
+        <div className="md:order-first">
             <img
               src={t1} // Replace with your actual image URL
               alt="Westnile resort"
-              className="w-full h-auto rounded-md shadow-md"
+              className="w-full h-auto rounded-md shadow-md max-w-full"
             />
-          </div>
+        </div>
+
         </div>
       </div>
     </section>

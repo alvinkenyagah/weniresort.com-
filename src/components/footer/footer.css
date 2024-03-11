@@ -1,0 +1,17 @@
+.google-map-container {
+    width: 80%; /* Set your desired width */
+    margin-bottom: 5%;
+    margin: 0 auto; /* Center the container */
+    position: relative;
+    height: 0;
+    padding-bottom: 30%; /* Adjust this value to maintain the aspect ratio */
+  }
+  
+  .google-map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

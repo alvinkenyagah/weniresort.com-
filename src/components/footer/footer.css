@@ -1,11 +1,22 @@
 .google-map-container {
-    width: 80%; /* Set your desired width */
+    width: 100%;
     margin-bottom: 5%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     position: relative;
     height: 0;
-    padding-bottom: 30%; /* Adjust this value to maintain the aspect ratio */
+    padding-bottom: 30%; /* Default padding for desktops */
+  
+    @media only screen and (max-width: 768px) {
+      /* Tablet view */
+      padding-bottom: 50%; /* Adjust this value for tablet */
+    }
+  
+    @media only screen and (max-width: 480px) {
+      /* Mobile view */
+      padding-bottom: 75%; /* Adjust this value for mobile */
+    }
   }
+  
   
   .google-map-iframe {
     position: absolute;

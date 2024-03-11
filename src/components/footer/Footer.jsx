@@ -6,13 +6,13 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-white py-8">
+    <footer className="bg-white text-white py-3">
 
 
-      <div className="container mx-auto flex flex-wrap gap-8 flex-wrap">
+      <div className="container mx-auto flex flex-wrap gap-2 flex-wrap">
 
                   {/* Google Map */}
-
+                  <h1 className="text-black text-2xl font-bold">Find Us</h1>
                     <div className="google-map-container">
                      
                      <iframe

@@ -41,24 +41,29 @@ const Footer = () => {
         <h2 className="text-black text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="list-none p-0 m-0">
             <li className="mb-2">
-            <Link to="/" onClick={scrollToTop}>
+           
               <a href="#hero" className="text-xl text-black hover:text-blue-800 ">
+              <Link to="/" onClick={scrollToTop}>
                 Home
+                </Link>
               </a>
-              </Link>
-            </li>
-            <li className="mb-2"><Link to="/suites" onClick={scrollToTop}>
-              <a className="text-xl text-black hover:text-blue-800">
-                Rooms
-              </a>
-              </Link>
+             
             </li>
             <li className="mb-2">
-              <Link to="/about" onClick={scrollToTop}>
-              <a  className="text-xl text-black hover:text-blue-800">
-                About
+              <a className="text-xl text-black hover:text-blue-800">
+              <Link to="/suites" onClick={scrollToTop}>
+                Rooms
+                </Link>
               </a>
-              </Link>
+              
+            </li>
+            <li className="mb-2">
+              <a  className="text-xl text-black hover:text-blue-800">
+              <Link to="/about" onClick={scrollToTop}>
+                About
+                </Link>
+              </a>
+              
             </li>
             <li className="mb-2">
               <a href="#contact" className="text-xl text-black hover:text-blue-800">

@@ -6,7 +6,18 @@ import {t1} from './index'
 const AboutUsSection = () => {
 
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+
+
   return (
+
+    <>
     <section className="py-5 bg-white" id="about">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -38,6 +49,8 @@ Our conference has fully installed facilities, i.e., projectors, a public addres
         </div>
       </div>
     </section>
+
+</>
   );
 };
 

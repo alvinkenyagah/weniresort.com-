@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './HeroSection.css';
-import {t1, t2, t3, t4, t5, t6, t7, t8 } from './index'
+import {t4, t5, t7, t8 } from './index'
 
 
 
@@ -11,7 +11,7 @@ import {t1, t2, t3, t4, t5, t6, t7, t8 } from './index'
 const MainHeroSection = () => {
 
   const carouselImages = [
-    t1, t2, t3, t4, t5, t6, t7, t8
+     t4, t5, t7, t8
   ];
 
   // Settings for the react-slick carousel

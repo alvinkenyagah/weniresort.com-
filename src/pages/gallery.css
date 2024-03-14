@@ -1,0 +1,84 @@
+/* Gallery Container */
+.gallery-container {
+    margin: 20px;
+  }
+  
+  
+  
+  /* Image Gallery */
+  .image-gallery {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Image Gallery Slide */
+  .image-gallery-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Image Gallery Description */
+  .image-gallery-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Image Gallery Thumbnail Container */
+  .image-gallery-thumbnail {
+    margin-top: 10px;
+  }
+  
+  /* Image Gallery Thumbnail */
+  .image-gallery-thumbnail img {
+    width: auto;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 2px solid transparent;
+  }
+  
+  /* Image Gallery Thumbnail Active */
+  .image-gallery-thumbnail.active img {
+    border-color: #007bff;
+  }
+  
+
+
+
+  /* Category Button Container */
+.category {
+    margin-bottom: 10px;
+
+  }
+  
+  /* Category Button */
+  .category {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Display as inline element */
+    line-height: 1; /* Ensure each button is on a single line */
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+  
+  /* Category Button Hover */
+  .category:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light background color on hover */
+  }
+  
+  /* Category Button Active */
+  .category.active {
+    font-weight: bold; /* Make the active category bold */
+    
+  }
+  
+
+  

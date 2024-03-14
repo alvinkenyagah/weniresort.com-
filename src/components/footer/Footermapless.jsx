@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 import './footer.css'
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footermapless = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,21 +20,6 @@ const Footer = () => {
 
 
       <div className="container mx-auto flex flex-wrap gap-2 flex-wrap">
-
-                  {/* Google Map */}
-                  <h1 className="text-black text-2xl font-bold">Find Us</h1>
-                    <div className="google-map-container">
-                     
-                     <iframe
-                       title="Google Map"
-                       src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.240610773692!2d34.77393459301031!3d-0.11593370000000289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa31f33ff79d9%3A0xf19ac29733fdad7d!2swest%20nile%20resort!5e0!3m2!1sen!2ske!4v1710161873197!5m2!1sen!2ske'
-                       className="google-map-iframe"
-                       frameBorder="0"
-                       style={{ border: 0 }}
-                       allowFullScreen=""
-                       loading="lazy"
-                     />
-                   </div>
 
         {/* Navigation Buttons */}
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
@@ -103,4 +88,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footermapless;

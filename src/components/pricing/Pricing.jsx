@@ -11,21 +11,21 @@ const PricingSection = () => {
           {/* Pricing Card - Basic */}
           <div className="pricing-card">
             <h3 className="text-lg font-semibold mb-2">Day rest</h3>
-            <p className="text-gray-600 mb-4">Perfect for individuals</p>
+            <p className="text-gray-600 mb-4">Perfect for individuals. </p>
             <div className="text-2xl font-bold mb-4">1000 KSH</div>
           </div>
 
           {/* Pricing Card - Standard */}
           <div className="pricing-card">
             <h3 className="text-lg font-semibold mb-2">Standard rooms</h3>
-            <p className="text-gray-600 mb-4">Great for small businesses</p>
+            <p className="text-gray-600 mb-4">Great individual guests staying over night.</p>
             <div className="text-2xl font-bold mb-4">1500 KSH</div>
           </div>
 
           {/* Pricing Card - Premium */}
           <div className="pricing-card">
             <h3 className="text-lg font-semibold mb-2">Double Occupancy</h3>
-            <p className="text-gray-600 mb-4">Ideal for multiple individuals</p>
+            <p className="text-gray-600 mb-4">Ideal for couples staying over night.</p>
             <div className="text-2xl font-bold mb-4">2000 KSH</div>
           </div>
         </div>

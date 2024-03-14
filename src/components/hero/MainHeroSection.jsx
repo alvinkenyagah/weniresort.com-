@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './HeroSection.css';
 import {t4, t5, t7, t8 } from './index'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -13,6 +14,8 @@ const MainHeroSection = () => {
   const carouselImages = [
      t4, t5, t7, t8
   ];
+
+  const navigate = useNavigate();
 
   // Settings for the react-slick carousel
   const carouselSettings = {
@@ -43,7 +46,7 @@ const MainHeroSection = () => {
         <p className="subheadline">
           Experience luxury and comfort like never before. Visit us today.
         </p>
-        <a href="#about" className="btn-book-now">
+        <a onClick={() => navigate('/suites')} className="btn-book-now" style={{cursor:'pointer'}}>
           Explore
         </a>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import './gallery.css'
-import { a1, a2, a3, a4, a5, a6, a8, c1, c2, c3, c6,c7, r1, r5, r6, r7, r8, r9, r11 } from './index'
+import { re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, r1, r5, r6, r7, r8, r9, r11 } from './index'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -21,7 +21,7 @@ const Gallery = () => {
   const phoneNumber2 = '+254 791544123'
 
   // Define categories
-  const categories = ['Rooms', 'Conference', 'Amenities'];
+  const categories = ['Rooms', 'Conference', 'Amenities', 'Restaurant'];
 
   // Dummy data for images categorized by room type
   const roomImages = [
@@ -89,6 +89,11 @@ const Gallery = () => {
       thumbnail: c6,
       description: 'Conference Room 2'
     },
+    {
+      original: c12,
+      thumbnail: c12,
+      description: 'Conference Room 2'
+    },
 
 
   ];
@@ -97,12 +102,12 @@ const Gallery = () => {
     {
       original: a1,
       thumbnail: a1,
-      description: 'Restaurant 1'
+      description: 'Outdoor '
     },
     {
       original: a2,
       thumbnail: a2,
-      description: 'Restaurant 2'
+      description: ' WestNile Indoor bar'
     },
     {
       original: a3,
@@ -122,16 +127,57 @@ const Gallery = () => {
     {
       original: a6,
       thumbnail: a6,
-      description: 'Restaurant 2'
+      description: 'Outdoor veiw of the occupancy rooms'
     },
     {
       original: a8,
       thumbnail: a8,
       description: 'Restaurant 2'
     },
+    {
+      original: a11,
+      thumbnail: a11,
+      description: 'WestNile Bar shelf'
+    },
+    {
+      original: a10,
+      thumbnail: a10,
+      description: 'WestNile Bar counter section '
+    },
 
 
   ];
+
+  const restaurantImages = [
+
+    {
+      original: re1,
+      thumbnail: re1,
+      description: 'WestNile Bar Restaraunt  '
+    },
+    {
+      original: re3,
+      thumbnail: re3,
+      description: 'WestNile Bar Restaraunt 1 '
+    },
+    {
+      original: re5,
+      thumbnail: re5,
+      description: 'WestNile Bar Restaraunt 2 '
+    },
+    {
+      original: re11,
+      thumbnail: re11,
+      description: 'WestNile Bar Restaraunt 3 '
+    },
+    // {
+    //   original: re7,
+    //   thumbnail: re7,
+    //   description: 'WestNile Bar Restaraunt 4 '
+    // },
+
+
+  ]
 
   // State to manage selected category
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
@@ -145,6 +191,8 @@ const Gallery = () => {
         return conferenceImages;
       case 'Amenities':
         return amenitiesImages ;
+      case 'Restaurant':
+          return restaurantImages;      
       default:
         return [];
         
@@ -156,7 +204,7 @@ const Gallery = () => {
     <div>
       <h2 className="text-xl font-bold mt-3 mb-8 text-center">Gallery</h2>
       <div className='flex-item'>
-        {/* Display category buttons */}
+
         {categories.map(category => (
           <button key={category} onClick={() => setSelectedCategory(category)} className='category'>{category}</button>
         ))}
@@ -240,89 +288,3 @@ const Gallery = () => {
 
 export default Gallery;
 
-
-
-// import React, { useState } from 'react';
-// import ImageGallery from 'react-image-gallery';
-// import 'react-image-gallery/styles/css/image-gallery.css'; // Import the CSS for styling
-// import './gallery.css'
-
-// const Gallery = () => {
-//   // Define categories
-//   const categories = ['Rooms', 'Conference Rooms', 'Restaurant'];
-
-//   // Dummy data for images categorized by room type
-//   const roomImages = [
-//     {
-//       original: 'https://interiordesignexplained.com/images/full-size/05/double-hotel-room-design-1.jpeg',
-//       thumbnail: 'https://interiordesignexplained.com/images/full-size/05/double-hotel-room-design-1.jpeg',
-//       description: 'Room 1'
-//     },
-//     {
-//       original: 'room2.jpg',
-//       thumbnail: 'room2_thumb.jpg',
-//       description: 'Room 2'
-//     },
-//     // Add more room images
-//   ];
-
-//   const conferenceRoomImages = [
-//     {
-//       original: 'https://workspacesolutions.com/blog/wp-content/uploads/2017/09/Conference-Room-Design-1024x682.jpg',
-//       thumbnail: 'https://workspacesolutions.com/blog/wp-content/uploads/2017/09/Conference-Room-Design-1024x682.jpg',
-//       description: 'Conference Room 1'
-//     },
-//     {
-//       original: 'conference2.jpg',
-//       thumbnail: 'conference2_thumb.jpg',
-//       description: 'Conference Room 2'
-//     },
-//     // Add more conference room images
-//   ];
-
-//   const restaurantImages = [
-//     {
-//       original: 'https://static.dezeen.com/uploads/2020/12/barbajean-malta-restaurant-interiors-pink-mizzi-studio_dezeen_sq-1-1233x1233.jpg',
-//       thumbnail: 'https://static.dezeen.com/uploads/2020/12/barbajean-malta-restaurant-interiors-pink-mizzi-studio_dezeen_sq-1-1233x1233.jpg',
-//       description: 'Restaurant 1'
-//     },
-//     {
-//       original: 'restaurant2.jpg',
-//       thumbnail: 'restaurant2_thumb.jpg',
-//       description: 'Restaurant 2'
-//     },
-//     // Add more restaurant images
-//   ];
-
-//   // State to manage selected category
-//   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
-
-//   // Function to get images based on selected category
-//   const getImagesForCategory = () => {
-//     switch (selectedCategory) {
-//       case 'Rooms':
-//         return roomImages;
-//       case 'Conference Rooms':
-//         return conferenceRoomImages;
-//       case 'Restaurant':
-//         return restaurantImages;
-//       default:
-//         return [];
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Gallery</h2>
-//       <div>
-//         {/* Display category buttons */}
-//         {categories.map(category => (
-//           <button key={category} onClick={() => setSelectedCategory(category)}>{category}</button>
-//         ))}
-//       </div>
-//       <ImageGallery items={getImagesForCategory()} />
-//     </div>
-//   );
-// };
-
-// export default Gallery;

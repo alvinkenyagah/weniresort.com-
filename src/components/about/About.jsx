@@ -2,6 +2,7 @@
 import React from 'react';
 import './About.css'
 import {t1} from './index'
+import {a1} from '../../pages/index'
 
 const AboutUsSection = () => {
 
@@ -40,7 +41,7 @@ Our conference has fully installed facilities, i.e., projectors, a public addres
           {/* Image */}
         <div className="md:order-first">
             <img
-              src={t1} // Replace with your actual image URL
+              src={a1} // Replace with your actual image URL
               alt="Westnile resort"
               className="w-full h-auto rounded-md shadow-md max-w-full"
             />

@@ -44,7 +44,7 @@ const Gallery = () => {
     ,
     {
       original: r7,
-      thumbnail: r8,
+      thumbnail: r7,
       description: 'Room 2'
     }
     ,

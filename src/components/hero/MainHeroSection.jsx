@@ -12,7 +12,8 @@ import { useNavigate } from 'react-router-dom';
 const MainHeroSection = () => {
 
   const carouselImages = [
-     t4, t5, t7, t8
+     t4, t5, t7
+
   ];
 
   const navigate = useNavigate();

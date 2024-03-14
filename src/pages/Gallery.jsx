@@ -33,13 +33,13 @@ const Gallery = () => {
     {
       original: r5,
       thumbnail: r5,
-      description: 'Room 2'
+      description: 'WestNile Accomodation rooms lobby'
     },
     
     {
       original: r6,
       thumbnail: r6,
-      description: 'Room 3'
+      description: 'WestNile Accomodation rooms lobby'
     }
     ,
     {
@@ -51,7 +51,7 @@ const Gallery = () => {
     {
       original: r8,
       thumbnail: r8,
-      description: 'Room 2'
+      description: 'WestNile Accomodation rooms lobby'
     }
     ,
     {

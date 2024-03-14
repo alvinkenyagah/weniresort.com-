@@ -24,43 +24,43 @@ const Gallery = () => {
   // Dummy data for images categorized by room type
   const roomImages = [
     {
-      original: 'src/pages/images/rooms/r2.jpg',
-      thumbnail: 'src/pages/images/rooms/r2.jpg',
+      original: r1,
+      thumbnail: r1,
       description: 'WestNile visitor stay'
     },
     {
-      original: 'src/pages/images/rooms/r1.jpg',
-      thumbnail: 'src/pages/images/rooms/r1.jpg',
+      original: r2,
+      thumbnail: r2,
       description: 'Room 2'
     },
     
     {
-      original: 'src/pages/images/rooms/r3.jpg',
-      thumbnail: 'src/pages/images/rooms/r3.jpg',
+      original: r3,
+      thumbnail: r3,
       description: 'Room 3'
     }
     ,
     {
-      original: 'src/pages/images/rooms/r4.jpg',
-      thumbnail: 'src/pages/images/rooms/r4.jpg',
+      original: r4,
+      thumbnail: r4,
       description: 'Room 2'
     }
     ,
     {
-      original: 'src/pages/images/rooms/r5.jpg',
-      thumbnail: 'src/pages/images/rooms/r5.jpg',
+      original: r5,
+      thumbnail: r5,
       description: 'Room 2'
     }
     ,
     {
-      original: 'src/pages/images/rooms/r6.jpg',
-      thumbnail: 'src/pages/images/rooms/r6.jpg',
+      original: r6,
+      thumbnail: r6,
       description: 'Room 2'
     }
     ,
     {
-      original: 'src/pages/images/rooms/r7.jpg',
-      thumbnail: 'src/pages/images/rooms/r7.jpg',
+      original: r7,
+      thumbnail: r7,
       description: 'Room 2'
     },
 
@@ -68,30 +68,56 @@ const Gallery = () => {
 
   const conferenceImages = [
     {
-      original: 'https://1.bp.blogspot.com/-JO58F_a6vwM/T51RUCFYdYI/AAAAAAAAAd8/ZNqYM3jXk_8/s1600/Hot%2Bcar%2Bwallpapers-6.jpg',
-      thumbnail: 'https://1.bp.blogspot.com/-JO58F_a6vwM/T51RUCFYdYI/AAAAAAAAAd8/ZNqYM3jXk_8/s1600/Hot%2Bcar%2Bwallpapers-6.jpg',
+      original: c1,
+      thumbnail: c1,
       description: 'Conference Room 1'
     },
     {
-      original: 'conference2.jpg',
-      thumbnail: 'conference2_thumb.jpg',
+      original: c2,
+      thumbnail: c2,
       description: 'Conference Room 2'
     },
-    // Add more conference room images
+    {
+      original: c3,
+      thumbnail: c3,
+      description: 'Conference Room 2'
+    },
+    {
+      original: c4,
+      thumbnail: c4,
+      description: 'Conference Room 2'
+    },
+
+
   ];
 
   const amenitiesImages = [
     {
-      original: 'restaurant1.jpg',
-      thumbnail: 'restaurant1_thumb.jpg',
+      original: a1,
+      thumbnail: a1,
       description: 'Restaurant 1'
     },
     {
-      original: 'restaurant2.jpg',
-      thumbnail: 'restaurant2_thumb.jpg',
+      original: a2,
+      thumbnail: a2,
       description: 'Restaurant 2'
     },
-    // Add more restaurant images
+    {
+      original: a3,
+      thumbnail: a3,
+      description: 'Restaurant 2'
+    },
+    {
+      original: a4,
+      thumbnail: a4,
+      description: 'Restaurant 2'
+    },
+    {
+      original: a5,
+      thumbnail: a5,
+      description: 'Restaurant 2'
+    },
+
   ];
 
   // State to manage selected category
@@ -102,12 +128,13 @@ const Gallery = () => {
     switch (selectedCategory) {
       case 'Rooms':
         return roomImages;
-      case 'Conference Rooms':
+      case 'Conference':
         return conferenceImages;
-      case 'Scenary':
-        return amenitiesImages;
+      case 'Amenities':
+        return amenitiesImages ;
       default:
         return [];
+        
     }
   };
 

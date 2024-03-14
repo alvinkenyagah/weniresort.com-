@@ -16,6 +16,9 @@ const Aboutpage = () => {
     });
   };
 
+  const phoneNumber = '+254 733731300'
+  const phoneNumber2 = '+254 791544123'
+
 
 
   return (
@@ -96,8 +99,11 @@ Our conference has fully installed facilities, i.e., projectors, a public addres
   {/* Contact Information */}
   <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
   <h2 className="text-black text-2xl font-bold mb-4">Contact Us</h2>
-    <p className='text-xl'>Phone: +254 791544123</p>
-    <p className='text-xl'>Phone: +254 733731300</p>
+
+  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber2}`} className='hover:text-blue-800'>{phoneNumber2}</a></p>
+  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber}`} className='hover:text-blue-800'>{phoneNumber}</a></p>
+
+
     <p className='text-xl'>Address: nyamasaria road, Kisumu East</p>
   </div>
 

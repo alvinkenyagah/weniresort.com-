@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import './gallery.css'
-import {a1, a2, a3, a4, a5, c1, c2, c3, c4, r1, r2, r3, r4, r5, r6, r7} from './index'
+import { a1, a2, a3, a4, a5, a6, a8, c1, c2, c3, c6,c7, r1, r5, r6, r7, r8, r9, r11 } from './index'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -17,6 +17,8 @@ const Gallery = () => {
     });
   };
 
+  const phoneNumber = '+254 733731300'
+  const phoneNumber2 = '+254 791544123'
 
   // Define categories
   const categories = ['Rooms', 'Conference', 'Amenities'];
@@ -29,38 +31,38 @@ const Gallery = () => {
       description: 'WestNile visitor stay'
     },
     {
-      original: r2,
-      thumbnail: r2,
+      original: r5,
+      thumbnail: r5,
       description: 'Room 2'
     },
     
     {
-      original: r3,
-      thumbnail: r3,
+      original: r6,
+      thumbnail: r6,
       description: 'Room 3'
     }
     ,
     {
-      original: r4,
-      thumbnail: r4,
-      description: 'Room 2'
-    }
-    ,
-    {
-      original: r5,
-      thumbnail: r5,
-      description: 'Room 2'
-    }
-    ,
-    {
-      original: r6,
-      thumbnail: r6,
-      description: 'Room 2'
-    }
-    ,
-    {
       original: r7,
-      thumbnail: r7,
+      thumbnail: r8,
+      description: 'Room 2'
+    }
+    ,
+    {
+      original: r8,
+      thumbnail: r8,
+      description: 'Room 2'
+    }
+    ,
+    {
+      original: r9,
+      thumbnail: r9,
+      description: 'Room 2'
+    }
+    ,
+    {
+      original: r11,
+      thumbnail: r11,
       description: 'Room 2'
     },
 
@@ -83,8 +85,8 @@ const Gallery = () => {
       description: 'Conference Room 2'
     },
     {
-      original: c4,
-      thumbnail: c4,
+      original: c6,
+      thumbnail: c6,
       description: 'Conference Room 2'
     },
 
@@ -117,6 +119,17 @@ const Gallery = () => {
       thumbnail: a5,
       description: 'Restaurant 2'
     },
+    {
+      original: a6,
+      thumbnail: a6,
+      description: 'Restaurant 2'
+    },
+    {
+      original: a8,
+      thumbnail: a8,
+      description: 'Restaurant 2'
+    },
+
 
   ];
 
@@ -193,8 +206,10 @@ const Gallery = () => {
   {/* Contact Information */}
   <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
   <h2 className="text-black text-2xl font-bold mb-4">Contact Us</h2>
-    <p className='text-xl'>Phone: +254 791544123</p>
-    <p className='text-xl'>Phone: +254 733731300</p>
+
+  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber2}`} className='hover:text-blue-800'>{phoneNumber2}</a></p>
+  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber}`} className='hover:text-blue-800'>{phoneNumber}</a></p>
+
     <p className='text-xl'>Address: nyamasaria road, Kisumu East</p>
   </div>
 

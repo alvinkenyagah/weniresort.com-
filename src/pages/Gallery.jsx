@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import { IoMdPhonePortrait,IoMdMap} from 'react-icons/io';
 import './gallery.css'
 import { re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, r1, r5, r6, r7, r8, r9, r11 } from './index'
 
@@ -253,14 +254,21 @@ const Gallery = () => {
 
   {/* Contact Information */}
   <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
-  <h2 className="text-black text-2xl font-bold mb-4">Contact Us</h2>
-
-  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber2}`} className='hover:text-blue-800'>{phoneNumber2}</a></p>
-  <p className='text-xl'>Phone: <a href={`tel:${phoneNumber}`} className='hover:text-blue-800'>{phoneNumber}</a></p>
-
-    <p className='text-xl'>Address: nyamasaria road, Kisumu East</p>
+  <h2 className="text-black text-2xl font-bold mb-2">Contact Us</h2>
+  <p className='text-xl'>For bookings, reservations, and enquiries contact us at</p>  
+  <div className='flex items-center text-xl italic'>
+    <IoMdPhonePortrait className="text-2xl mr-1" />
+    <a href={`tel:${phoneNumber2}`} className='hover:text-blue-800'>{phoneNumber2}</a>
   </div>
-
+  <div className='flex items-center text-xl italic'>
+    <IoMdPhonePortrait className="text-2xl mr-1" />
+    <a href={`tel:${phoneNumber}`} className='hover:text-blue-800'>{phoneNumber}</a>
+  </div>
+  <div className='flex items-center text-xl italic'>
+    < IoMdMap className="text-2xl mr-1"/>
+  <p className='text-xl'>Address: nyamasaria road, Kisumu East</p>
+  </div>
+</div>
 
   {/* Social Media Links */}
   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">

@@ -46,7 +46,7 @@ const Gallery = () => {
     {
       original: r7,
       thumbnail: r7,
-      description: 'Room 2'
+      description: 'WestNile double occupancy room'
     }
     ,
     {
@@ -58,13 +58,13 @@ const Gallery = () => {
     {
       original: r9,
       thumbnail: r9,
-      description: 'Room 2'
+      description: 'WestNile single occupancy room'
     }
     ,
     {
       original: r11,
       thumbnail: r11,
-      description: 'Room 2'
+      description: 'WestNile single occupancy room'
     },
 
   ];
@@ -73,27 +73,27 @@ const Gallery = () => {
     {
       original: c1,
       thumbnail: c1,
-      description: 'Conference Room 1'
+      description: 'WestNile Conference Room'
     },
     {
       original: c2,
       thumbnail: c2,
-      description: 'Conference Room 2'
+      description: 'WestNile Conference Room lobby'
     },
     {
       original: c3,
       thumbnail: c3,
-      description: 'Conference Room 2'
+      description: 'WestNile Conference Room'
     },
     {
       original: c6,
       thumbnail: c6,
-      description: 'Conference Room 2'
+      description: 'WestNile Conference Room'
     },
     {
       original: c12,
       thumbnail: c12,
-      description: 'Conference Room 2'
+      description: 'WestNile Conference Room'
     },
 
 
@@ -103,27 +103,27 @@ const Gallery = () => {
     {
       original: a1,
       thumbnail: a1,
-      description: 'Outdoor '
+      description: 'WestNile outdoor restaurant space '
     },
     {
       original: a2,
       thumbnail: a2,
-      description: ' WestNile Indoor bar'
+      description: ' WestNile Indoor restaurant and bar'
     },
     {
       original: a3,
       thumbnail: a3,
-      description: 'Restaurant 2'
+      description: 'WestNile Outdoor space'
     },
     {
       original: a4,
       thumbnail: a4,
-      description: 'Restaurant 2'
+      description: 'WestNile outdoor restaurant space'
     },
     {
       original: a5,
       thumbnail: a5,
-      description: 'Restaurant 2'
+      description: 'WestNile Outdoor restaurant space'
     },
     {
       original: a6,
@@ -133,7 +133,7 @@ const Gallery = () => {
     {
       original: a8,
       thumbnail: a8,
-      description: 'Restaurant 2'
+      description: 'WestNile Outdoor restaurant space night'
     },
     {
       original: a11,
@@ -154,22 +154,22 @@ const Gallery = () => {
     {
       original: re1,
       thumbnail: re1,
-      description: 'WestNile Bar Restaraunt  '
+      description: 'WestNile resort indoor restaurant'
     },
     {
       original: re3,
       thumbnail: re3,
-      description: 'WestNile Bar Restaraunt 1 '
+      description: 'WestNile resort indoor restaurant'
     },
     {
       original: re5,
       thumbnail: re5,
-      description: 'WestNile Bar Restaraunt 2 '
+      description: 'WestNile resort indoor restaurant'
     },
     {
       original: re11,
       thumbnail: re11,
-      description: 'WestNile Bar Restaraunt 3 '
+      description: 'WestNile resort indoor restaurant'
     },
     // {
     //   original: re7,
@@ -203,7 +203,7 @@ const Gallery = () => {
   return (
     <>
     <div>
-      <h2 className="text-xl font-bold mt-3 mb-8 text-center">Gallery</h2>
+      <h2 className="text-2xl font-bold mt-3 mb-8 text-center">Gallery</h2>
       <div className='flex-item'>
 
         {categories.map(category => (

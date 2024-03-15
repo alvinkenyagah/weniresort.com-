@@ -82,4 +82,37 @@
   
 
   
-  
+  /* Flex container for category buttons */
+.flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Category Button */
+.category {
+  margin-right: 10px;
+  margin-bottom: 10px; /* Add margin bottom to create stacking effect */
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  max-width: 100%; /* Ensure button takes full width when stacking */
+  text-align: center; /* Center text inside button */
+}
+
+/* Category Button Hover */
+.category:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Category Button Active */
+.category.active {
+  font-weight: bold;
+}

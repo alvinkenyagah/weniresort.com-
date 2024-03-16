@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './HeroSection.css';
-import {t4, t5, t7, t8 } from './index'
+import {t1, t2, t3, t4, t6} from './index'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 const MainHeroSection = () => {
 
   const carouselImages = [
-     t4, t5, t7
+    t4, t2, t3, t1, t6
 
   ];
 

@@ -26,9 +26,33 @@
   .pricing-card {
     width: 300px; /* Maintain fixed width for horizontal stacking */
     margin-right: 20px; /* Add spacing between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 
   .pricing-card:last-child {
     margin-right: 0; /* Remove margin from the last card */
+  }
+}
+
+
+/* Media query for tablet devices */
+@media (max-width: 1279px) {
+  .pricing-cards-container {
+    flex-direction: column; /* Stack cards vertically on tablet screens */
+    padding: 0 20px; /* Add padding to the container */
+  }
+
+  .pricing-card {
+    width: calc(100% - 40px); /* Full width minus padding for each card in tablet mode */
+    margin-right: 0; /* Remove margin between cards in tablet mode */
+    margin-bottom: 20px; /* Add spacing between cards vertically */
+    padding: 20px; /* Add padding to each card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .pricing-card:last-child {
+    margin-bottom: 0; /* Remove margin from the last card in tablet mode */
   }
 }

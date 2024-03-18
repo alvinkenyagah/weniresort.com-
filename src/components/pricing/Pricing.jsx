@@ -7,6 +7,8 @@ const PricingSection = () => {
     <section className="py-16 bg-gray-100" id='pricing'>
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Our plans</h2>
+
+        
         <div className="pricing-cards-container"> {/* Added a class for the pricing cards container */}
           {/* Pricing Card - Basic */}
           <div className="pricing-card">
@@ -21,6 +23,7 @@ const PricingSection = () => {
             <p className="text-gray-600 mb-4">Great individual guests staying overnight.</p>
             <div className="text-2xl font-bold mb-4">1500 KSH</div>
           </div>
+          
 
           {/* Pricing Card - Premium */}
           <div className="pricing-card">
@@ -35,6 +38,9 @@ const PricingSection = () => {
             <p className="text-gray-600 mb-4">Perfect for holding company meetings.</p>
             <div className="text-2xl font-bold mb-4">Enquire for pricing</div>
           </div>
+
+
+
         </div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const Navbar = () => {
         )}
 
         <div className='p-4 md:max-w-[1080px] max-w-[400px] m-auto w-full h-full flex justify-between items-center'>
-          <h1 className='text-3xl font-bold text-sky-400/100'><Link to="/">WestNile</Link></h1>
+          <h1 className='text-3xl  text-sky-400/100 calligraphy'><Link to="/">WestNile</Link></h1>
           <div className='flex items-center'>
             <ul className='hidden md:flex gap-9 '>
               <li>

@@ -8,4 +8,10 @@
   
   
   
-  
+  .calligraphy {
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 3rem; */
+    font-weight: 400;
+    font-style: italic;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }

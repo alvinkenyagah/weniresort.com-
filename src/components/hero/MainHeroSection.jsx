@@ -41,10 +41,10 @@ const MainHeroSection = () => {
         ))}
       </Slider>
       <div className="hero-content">
-        <h1 className="catchy-headline">
+        <h1 className="catchy-headline calligraphy">
           Your Dream Stay Awaits at <span>WestNile Resort</span>
         </h1>
-        <p className="subheadline">
+        <p className="subheadline fancy-text">
           Experience luxury and comfort like never before. Visit us today.
         </p>
         <a onClick={() => navigate('/suites')} className="btn-book-now" style={{cursor:'pointer'}}>

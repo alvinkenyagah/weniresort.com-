@@ -148,3 +148,29 @@
     font-size: 1rem; /* Adjust font size for better readability on small screens */
   }
 }
+
+
+
+.calligraphy {
+  font-family: 'Dancing Script', cursive;
+  /* font-size: 3rem; */
+  font-weight: 400;
+  font-style: italic;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.fancy-text {
+  font-family: 'Caveat', cursive; /* Example font */
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #e2e2e2;
+
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

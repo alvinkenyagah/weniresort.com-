@@ -293,7 +293,7 @@ const Gallery = () => {
 
         <div>
           <hr />
-          <p className='text-black flex justify-center'>Copyright © 2024 WestNileResort</p>
+          <p className='text-black flex justify-center mt-1'>Copyright © 2024 WestNileResort</p>
         </div>
 
 

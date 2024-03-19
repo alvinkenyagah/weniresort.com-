@@ -6,7 +6,7 @@ const PricingSection = () => {
   return (
     <section className="py-16 bg-gray-100" id='pricing'>
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">Our plans</h2>
+        <h1 className="text-4xl font-bold mb-8">Our plans</h1>
 
         
         <div className="pricing-cards-container"> {/* Added a class for the pricing cards container */}

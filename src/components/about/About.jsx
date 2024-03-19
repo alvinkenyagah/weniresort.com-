@@ -20,7 +20,7 @@ const AboutUsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Text Content */}
             <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4">About Our Resort</h2>
+              <h1 className="text-3xl font-bold mb-4">About Our Resort</h1>
               <p className="text-gray-600  mb-6 calligraph">
                 Welcome to WestNile Resort, where tradition meets modern comfort. Located in Kisumu City, Nyamasaria 200 meters from Butter Toast Bakery off Nairobi road towards Nyamasaria SDA Church.
               </p>

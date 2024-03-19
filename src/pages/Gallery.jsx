@@ -208,7 +208,7 @@ const Gallery = () => {
   return (
     <>
     <div>
-      <h2 className="text-2xl font-bold mt-3 mb-8 text-center">Gallery</h2>
+      <h1 className="text-2xl font-bold mt-3 mb-8 text-center">Gallery</h1>
       <div className="flex-item">
           {categories.map(category => (
             <button
@@ -232,7 +232,7 @@ const Gallery = () => {
 
   {/* Navigation Buttons */}
   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-  <h2 className="text-black text-2xl font-bold mb-4">Quick Links</h2>
+  <h1 className="text-black text-2xl font-bold mb-4">Quick Links</h1>
     <ul className="list-none p-0 m-0">
       <li className="mb-2">
       <Link to="/" onClick={scrollToTop}>
@@ -264,7 +264,7 @@ const Gallery = () => {
 
   {/* Contact Information */}
   <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
-  <h2 className="text-black text-2xl font-bold mb-2">Contact Us</h2>
+  <h1 className="text-black text-2xl font-bold mb-2">Contact Us</h1>
   <p className='text-xl'>For bookings, reservations, and enquiries contact us at</p>  
   <div className='flex items-center text-xl italic'>
     <IoMdPhonePortrait className="text-2xl mr-1" />
@@ -282,7 +282,7 @@ const Gallery = () => {
 
   {/* Social Media Links */}
   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-  <h2 className="text-black text-2xl font-bold mb-4">Follow Us</h2>
+  <h1 className="text-black text-2xl font-bold mb-4">Follow Us</h1>
     <div className="flex">
       <a href="https://www.facebook.com/people/WestNile-Resort/100054209033889/" className="mr-4" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} className="text-black text-3xl hover:text-blue-800"  />

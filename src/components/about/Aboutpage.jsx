@@ -30,7 +30,7 @@ const Aboutpage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Text Content */}
             <div className="text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4">About Our Resort</h2>
+              <h1 className="text-3xl font-bold mb-4">About Our Resort</h1>
               <p className="text-gray-600 mb-6 calligraph">
                 Welcome to WestNile Resort, where tradition meets modern comfort. Located in Kisumu City, Nyamasaria 200 meters from Butter Toast Bakery off Nairobi road towards Nyamasaria SDA Church.
               </p>
@@ -66,7 +66,7 @@ const Aboutpage = () => {
 
   {/* Navigation Buttons */}
   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-  <h2 className="text-black text-2xl font-bold mb-2">Quick Links</h2>
+  <h1 className="text-black text-2xl font-bold mb-2">Quick Links</h1>
     <ul className="list-none p-0 m-0">
       <li className="mb-2">
       <Link to="/" onClick={scrollToTop}>
@@ -98,7 +98,7 @@ const Aboutpage = () => {
 
   {/* Contact Information */}
   <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
-  <h2 className="text-black text-2xl font-bold mb-2">Contact Us</h2>
+  <h1 className="text-black text-2xl font-bold mb-2">Contact Us</h1>
   <p className='text-xl'>For bookings, reservations, and enquiries contact us at</p>  
   <div className='flex items-center text-xl italic'>
     <IoMdPhonePortrait className="text-2xl mr-1" />
@@ -120,7 +120,7 @@ const Aboutpage = () => {
 
   {/* Social Media Links */}
   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-  <h2 className="text-black text-2xl font-bold mb-2">Follow Us</h2>
+  <h1 className="text-black text-2xl font-bold mb-2">Follow Us</h1>
     <div className="flex">
       <a href="https://www.facebook.com/people/WestNile-Resort/100054209033889/" className="mr-4" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} className="text-black text-3xl hover:text-blue-800"  />

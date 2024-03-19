@@ -213,7 +213,7 @@ const Gallery = () => {
       <div className='flex-item'>
 
         {categories.map(category => (
-          <button key={category} onClick={() => setSelectedCategory(category)} className='category'>{category}</button>
+          <button key={category} onClick={() => setSelectedCategory(category)} className='category bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>{category}</button>
         ))}
       </div>
       <ImageGallery items={getImagesForCategory()} />

@@ -115,7 +115,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      {/* Copy right */}
+        <div>
+          <hr />
+          <p className='text-black flex justify-center'>Copyright © 2024 WestNileResort</p>
+        </div>
     </footer>
   );
 };

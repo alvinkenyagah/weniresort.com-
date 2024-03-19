@@ -186,7 +186,6 @@ const Gallery = () => {
 
   ]
 
-  // State to manage selected category
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   // Function to get images based on selected category
@@ -197,25 +196,30 @@ const Gallery = () => {
       case 'Conference':
         return conferenceImages;
       case 'Amenities':
-        return amenitiesImages ;
+        return amenitiesImages;
       case 'Restaurant':
-          return restaurantImages;      
+        return restaurantImages;
       default:
         return [];
-        
     }
   };
+
 
   return (
     <>
     <div>
       <h2 className="text-2xl font-bold mt-3 mb-8 text-center">Gallery</h2>
-      <div className='flex-item'>
-
-        {categories.map(category => (
-          <button key={category} onClick={() => setSelectedCategory(category)} className='category bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>{category}</button>
-        ))}
-      </div>
+      <div className="flex-item">
+          {categories.map(category => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`category ${selectedCategory === category ? 'bg-blue-500 hover:bg-blue-800' : 'bg-gray-500 hover:bg-gray-700'} text-white font-bold py-2 px-4 rounded`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       <ImageGallery items={getImagesForCategory()} />
     </div>
 

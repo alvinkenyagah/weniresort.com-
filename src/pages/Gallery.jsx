@@ -3,7 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import { IoMdPhonePortrait,IoMdMap} from 'react-icons/io';
 import './gallery.css'
-import { re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, r1, r5, r6, r7, r8, r9, r11 } from './index'
+import { re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, c13, r1, r5, r6, r7, r8, r9, r11 } from './index'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -86,13 +86,19 @@ const Gallery = () => {
       description: 'WestNile Conference Room'
     },
     {
-      original: c6,
-      thumbnail: c6,
+      original: c13,
+      thumbnail: c13,
       description: 'WestNile Conference Room'
     },
     {
       original: c12,
       thumbnail: c12,
+      description: 'WestNile Conference Room'
+    },
+
+    {
+      original: c6,
+      thumbnail: c6,
       description: 'WestNile Conference Room'
     },
 

@@ -16,6 +16,7 @@ import c3 from './images/conference/c3.jpg'
 import c6 from './images/conference/c6.jpg'
 import c7 from './images/conference/c7.jpg'
 import c12 from './images/conference/c12.jpg'
+import c13 from './images/conference/c13.jpg'
 
 
 
@@ -35,7 +36,7 @@ import re11 from './images/restaraunt/re11.jpg'
 
 
 
-export {re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, r1, r5, r6, r7, r8, r9, r11  };
+export {re1, re3, re5, re7, re11, a1, a2, a3, a4, a5, a6, a8, a11, a10, c1, c2, c3, c6,c7, c12, c13, r1, r5, r6, r7, r8, r9, r11  };
 
 
 

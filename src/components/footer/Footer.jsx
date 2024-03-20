@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap gap-2 flex-wrap">
 
                   {/* Google Map */}
-                  <h1 className="text-black text-2xl font-bold">Find Us</h1>
+                  <h1 className="text-black text-2xl font-bold text-blue-500">Find Us</h1>
                     <div className="google-map-container">
                      
                      <iframe
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Navigation Buttons */}
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-        <h1 className="text-black text-2xl font-bold mb-4">Quick Links</h1>
+        <h1 className="text-black text-2xl font-bold mb-4 text-blue-500">Quick Links</h1>
           <ul className="list-none p-0 m-0">
             <li className="mb-2">
            
@@ -80,18 +80,18 @@ const Footer = () => {
 
  {/* Contact Information */}
  <div className="text-black w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4" id="contactus">
-  <h1 className="text-black text-2xl font-bold mb-2">Contact Us</h1>
+  <h1 className="text-black text-2xl font-bold mb-2 text-blue-500">Contact Us</h1>
   <p className='text-xl'>For bookings, reservations, and enquiries contact us at</p>  
   <div className='flex items-center text-xl italic'>
-    <IoMdPhonePortrait className="text-2xl mr-1" />
-    <a href={`tel:${phoneNumber2}`} className='hover:text-blue-800'>{phoneNumber2}</a>
+    <IoMdPhonePortrait className="text-2xl mr-1 text-blue-500" />
+    <a href={`tel:${phoneNumber2}`} className='text-blue-800 bold hover:text-red-500'>{phoneNumber2}</a>
   </div>
   <div className='flex items-center text-xl italic'>
-    <IoMdPhonePortrait className="text-2xl mr-1" />
-    <a href={`tel:${phoneNumber}`} className='hover:text-blue-800'>{phoneNumber}</a>
+    <IoMdPhonePortrait className="text-2xl mr-1 text-blue-500" />
+    <a href={`tel:${phoneNumber}`} className='text-blue-800 bold hover:text-red-500'>{phoneNumber}</a>
   </div>
   <div className='flex items-center text-xl italic'>
-    < IoMdMap className="text-2xl mr-1"/>
+    < IoMdMap className="text-2xl mr-1 text-blue-500"/>
   <p className='text-xl'>Address: nyamasaria road, Kisumu East</p>
   </div>
 </div>
@@ -100,7 +100,7 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4">
-        <h1 className="text-black text-2xl font-bold mb-4">Follow Us</h1>
+        <h1 className="text-black text-2xl font-bold mb-4 text-blue-500">Follow Us</h1>
           <div className="flex">
             <a href="https://www.facebook.com/people/WestNile-Resort/100054209033889/" className="mr-4" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} className="text-black text-3xl hover:text-blue-800"  />
@@ -118,7 +118,7 @@ const Footer = () => {
       {/* Copy right */}
         <div>
           <hr />
-          <p className='text-black flex justify-center mt-1'>Copyright © 2024 WestNileResort</p>
+          <p className='text-black flex justify-center mt-1 text-blue-800'>Copyright © 2024 WestNileResort</p>
         </div>
     </footer>
   );

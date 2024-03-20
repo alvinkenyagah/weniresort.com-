@@ -3,7 +3,7 @@ import Hamburger from '../assets/hamburgerMenu.svg';
 import Close from '../assets/close.svg';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
-import { IoIosHome, IoIosContact, IoIosPricetag, IoIosInformationCircleOutline, IoMdCafe } from 'react-icons/io';
+import { IoIosHome, IoIosContact, IoIosPricetag, IoIosInformationCircleOutline, IoIosImages } from 'react-icons/io';
 import './navbar.css'
 
 const Navbar = () => {
@@ -50,8 +50,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/suites" onClick={scrollToTop} className="flex items-center hover:text-blue-800">
-                  <IoMdCafe className="text-2xl mr-1" />
-                  <span>Rooms and Suites</span>
+                  <IoIosImages className="text-2xl mr-1" />
+                  <span>Gallery</span>
                 </Link>
               </li>
               <li>
@@ -99,8 +99,8 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/suites" className="flex items-center mb-4 hover:text-blue-800">
-                <IoMdCafe className="text-2xl mr-1" />
-                <span>Rooms and Suites</span>
+                <IoIosImages className="text-2xl mr-1" />
+                <span>Gallery</span>
               </Link>
             </li>
             <li>

@@ -35,7 +35,7 @@ const Aboutpage = () => {
           Welcome to <span className="text-green-600">WestNile Resort</span>, where tradition meets modern comfort. Located in <span className="text-yellow-600">Kisumu City</span>, Nyamasaria 200 meters from Butter Toast Bakery off Nairobi road towards Nyamasaria SDA Church.
         </p>
         <p className="text-gray-600 mb-6 calligraph">
-          <span className="text-red-600">WestNile</span> offers a range of amenities to ensure a comfortable stay for our guests. These include 24/7 WiFi connectivity, a garden sports bar equipped with a 65" TV and DSTV for football matches, an outdoor recreational garden, and a fully functional conference facility for up to 200 people.
+          <span className="text-blue-600">WestNile</span> offers a range of amenities to ensure a comfortable stay for our guests. These include 24/7 WiFi connectivity, a garden sports bar equipped with a 65" TV and DSTV for football matches, an outdoor recreational garden, and a fully functional conference facility for up to 200 people.
         </p>
         <p className="text-gray-600 mb-6 calligraph">
           Our accommodation consists of 40 executive rooms that are self-contained and fully functional, providing a relaxing and enjoyable stay for our guests.

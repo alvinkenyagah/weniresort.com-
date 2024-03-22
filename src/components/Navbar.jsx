@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <div className={`w-full h-[96px] bg-transparent shadow-sm ${toggle ? 'overflow-hidden' : ''}`}>
+      <div className={`w-full h-[58px] bg-transparent shadow-sm ${toggle ? 'overflow-hidden' : ''}`}>
         {/* Dark overlay */}
         {toggle && (
           <div

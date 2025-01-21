@@ -10,7 +10,7 @@ function Landing() {
   return (
     <div className="app">
         <MainHeroSection/>
-        <AboutUsSection/>
+        {/* <AboutUsSection/> */}
         <PricingSection/>
         <Footer/>
     </div>
